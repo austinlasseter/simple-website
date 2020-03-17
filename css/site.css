@@ -1,0 +1,287 @@
+body{
+	color:#fff;	
+	font-family: "proxima-nova-soft",sans-serif;
+}
+
+.overlay{
+	position:fixed;
+	background-color:rgba(0,0,0,0.75);
+	top:0px;
+	left:0px;
+	bottom:0px;
+	right:0px;
+	z-index:1000;
+	display:none;
+}
+
+
+.mymodal{
+	margin:0 auto;
+	background-color:#fff;
+	padding:60px;
+	width:600px;
+	
+	border-radius:30px;
+	margin-top:100px;
+	z-index:1001;	
+	position:relative;
+	display:none;
+}
+
+.close{
+	position:absolute;
+	top:40px;
+	right:40px;
+	font-weight:bold;
+	font-size:30px;
+}
+
+.msg{
+	display:none;	
+}
+
+.email{
+	background-image:url(../img/email.png);
+	background-repeat:no-repeat;
+	background-position:left center;	
+	line-height:20px;
+	padding-left:20px;
+	color:#0f466d;
+	font-weight:bold;
+	font-size:16px;
+	margin-top:80px;
+	display:block;
+	text-align:left;
+}
+
+.bg{
+	background-image:url(../img/bg-large.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:bottom center;
+	height:600px;	
+}
+
+.footer{
+	position:fixed;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	padding:10px;
+	background-color:#0f466d;
+	color:#fff;
+}
+
+.form-control{
+	margin-bottom:10px;
+	font-size:16px;
+	line-height:30px;
+	color:#87a2b6;
+	height:auto !important;
+	border:1px #cfdae2 solid;
+}
+
+.form-control.form-email{
+	background-image:url(../img/form-email.png);
+	background-repeat:no-repeat;
+	background-position:left 10px center;
+	padding-left:35px;
+}
+
+.form-control.form-password{
+	background-image:url(../img/form-password.png);
+	background-repeat:no-repeat;
+	background-position:left 10px center;
+	padding-left:35px;
+}
+
+.link{
+	text-decoration:none;
+	color:#fff;
+	font-size:16px;
+	font-weight:bold;
+	margin-left:30px;
+	margin-top:20px;
+	display:inline-block;
+}
+
+.blue-text{
+	color:#0f466d;
+	text-align:center;
+	max-width:none;
+}
+
+
+.content{
+	padding-top:100px;	
+}
+
+h1{
+	border-top:1px #fff solid;
+	border-bottom:1px #fff solid;	
+	padding:20px 0px;
+	max-width:371px;
+	font-size:40px;
+}
+
+p{
+	padding:40px 0px;
+	max-width:371px;
+	font-size:20px;
+}
+
+.button{
+	border-radius:20px;
+	padding:10px 20px;
+	text-decoration:none;
+	font-size:18px;
+	font-weight:bold;
+	margin-right:10px;
+}
+
+.button.blue{
+	background-color:#0f466d;
+	color:#fff;	
+}
+
+.button.green{
+	background-color:#34BFC4;
+	color:#fff;	
+}
+
+.button.white{
+	background-color:#fff;
+	color:#f65b3c;	
+}
+
+.clear{
+	clear:both;	
+}
+
+/* hover */
+
+
+@media (min-width: 992px) {
+
+	.button:hover{
+		background-color:#f9dc4a;	
+		color:#f65b3c;	
+		text-decoration:none;
+	}
+	
+	.email:hover, .link:hover{
+		color:#f65b3c;
+		text-decoration:underline;
+	}
+}
+
+@media (max-width: 992px) {
+
+	.button:active{
+		background-color:#f9dc4a;	
+		color:#f65b3c;	
+		text-decoration:none;
+	}
+	
+	.email:active, .link:active{
+		color:#f65b3c;
+		text-decoration:underline;
+	}
+}
+
+@media (max-width: 992px) {
+	
+	.logo{
+		width:330px;
+		height:auto;	
+	}
+	
+}
+
+
+@media (max-width: 768px) {
+	
+	.bg{
+		background-image:url(../img/bg-small.png);
+		background-repeat:no-repeat;
+		background-size:100% 600px;
+		background-position:top center;
+		height:auto;	
+	}
+		
+	.content{
+		text-align:center;
+		padding-top:100px;
+	}
+	
+	.logo{
+		width:90%;
+		margin:0 auto;
+		height:auto;	
+	}
+	
+	h1{
+		max-width:none;	
+		text-align:center;
+		font-size:36px;
+	}
+	
+	p{
+		max-width:none;	
+	}
+	
+	.button.white{
+		background-color:	#f89c43;
+		color:#fff;
+	}
+	
+	.footer{
+		position:static;
+		width:100%;
+		top:auto;
+		bottom:auto;
+		left:auto;
+		right:auto;	
+		margin-top:100px;
+	}
+	
+	.mymodal{
+		padding:60px;
+		width:90%;
+		margin-top:20px;
+	}
+	
+	.close{
+		position:absolute;
+		top:20px;
+		right:20px;
+		font-weight:bold;
+		font-size:30px;
+	}
+	
+	.email{
+		margin:0 auto;
+		margin-top:70px;
+		width:200px;	
+	}
+
+
+}
+
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #87a2b6;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #87a2b6;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #87a2b6;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #87a2b6;
+}
+
+

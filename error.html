@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Whoops You Must Have Gone Wrong</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/site.css">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<script src="https://use.typekit.net/xwx1rne.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+<body>
+<div class="bg">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="content">
+					<img src="img/logo.png" class="logo" width="500" height="auto" alt=""/>
+					<h1><strong>404</strong></h1>
+					<p>Whoops! You must have gone wrong. This page does not exist</p>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+<div class="footer">
+	<div class="container">&copy; my website</div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.2.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+
+<script>
+jQuery(document).ready(function( $ ) {
+
+	$(".mymodal").click(function(e){
+
+		e.stopPropagation();
+
+	});
+
+	$(".close, .overlay, .closebutton").click(function(e){
+
+		e.preventDefault();
+
+		$(".mymodal").slideUp(500,false,function(){
+			$(".overlay").fadeOut();
+		});
+
+	});
+
+	$(".login-link").click(function(e){
+
+		e.preventDefault();
+
+		$(".overlay").fadeIn(500,false,function(){
+
+			$(".mymodal.login").slideDown(500,false,function(){
+
+			});
+
+		});
+	});
+
+	$(".more-link").click(function(e){
+
+		e.preventDefault();
+
+		$(".overlay").fadeIn(500,false,function(){
+
+			$(".mymodal.more").slideDown(500,false,function(){
+
+			});
+
+		});
+	});
+
+	$(".loginbutton").click(function(e){
+
+		e.preventDefault();
+
+
+		$(".msg").delay(300).slideDown(500,false,function(){
+
+		});
+
+
+	});
+});
+</script>
+
+</body>
+</html>
